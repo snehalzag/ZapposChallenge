@@ -40,7 +40,7 @@
   .grid-container, .grid-container2 {
     display: grid;
     width: 80%;
-    margin-left: 10%;
+    margin-left: 8%;
     grid-template-areas:
       'one two three';
     grid-gap: 30px;
