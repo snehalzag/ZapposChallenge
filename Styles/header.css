@@ -6,6 +6,7 @@
     background-color: rgb(255, 255, 255) ;
     position: fixed;
     z-index: 1;
+    box-shadow: 10px 10px 10px rgb(158, 157, 157);
   }
   
   /* Style the header links */
@@ -32,16 +33,22 @@
     margin-right: 20px;
     font-size: 25px;
     font-family: cursive;
-    font-weight: bold;
-  
+    font-weight: bold;  
   }
   
+  .header-right > a
+  {
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(218, 216, 216);
+  }
+
   .header-right > a:hover{
     background-color: black;
     color: white;
     border-radius: 10px;
     font-size: 35px;
     cursor: pointer;
+    box-shadow: 10px 10px 10px rgb(121, 120, 120);
   }
   
   .header-left > a:hover{
@@ -70,7 +77,8 @@
   }
   
   .L_name{
-    font-size: 35px;
+    font-size: 36px;
     font-family: cursive;
     font-weight: bold;
+    text-shadow: 5px 5px 5px rgb(206, 205, 205); 
   }

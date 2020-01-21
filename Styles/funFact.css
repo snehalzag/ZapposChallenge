@@ -5,6 +5,7 @@
     font-size: 50px;
     margin-top: 0px;
     text-align: center;
+    text-shadow: 5px 5px 5px rgb(238, 202, 202); 
   }
   
   .headContent{
@@ -56,10 +57,14 @@
     margin-left: 20%;
   }
   
+  .grid-container2 > div{
+    box-shadow: 20px 15px 10px rgb(20, 20, 20);
+  }
   
   .grid-container > div {
     text-align: center;
     font-size: 30px;
+    box-shadow: 20px 15px 10px rgb(20, 20, 20);
   }
   
   /* The overlay effect (full height and width) - lays on top of the container and over the image */
