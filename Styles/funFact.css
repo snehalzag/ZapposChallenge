@@ -8,6 +8,7 @@
     text-shadow: 5px 5px 5px rgb(238, 202, 202); 
   }
   
+
   .headContent{
     width: 100%;
     height: 100px;
@@ -59,12 +60,40 @@
   
   .grid-container2 > div{
     box-shadow: 20px 15px 10px rgb(20, 20, 20);
+    animation: shake 3.0s;
+    animation-iteration-count: infinite;
   }
   
   .grid-container > div {
     text-align: center;
     font-size: 30px;
     box-shadow: 20px 15px 10px rgb(20, 20, 20);
+    animation: shake 2.0s;
+    animation-iteration-count: infinite;
+  }
+
+  .grid-container > div:hover {
+    animation: none;
+    animation-iteration-count: 0;
+  }
+
+  .grid-container2 > div:hover {
+    animation: none;
+    animation-iteration-count: 0;
+  }
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
   
   /* The overlay effect (full height and width) - lays on top of the container and over the image */
