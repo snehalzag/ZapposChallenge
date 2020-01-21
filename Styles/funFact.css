@@ -145,4 +145,17 @@
     font-size: 20px;
   }
   
+
+  @media only screen and (max-width:800px) {
+    /* For tablets: */
+    .headContent, .content {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .headContent, .content {
+      width: 100%;
+    }
+  }
   

@@ -21,3 +21,16 @@
     height: 120px;
     float: right;
   }
+
+  @media only screen and (max-width:800px) {
+    /* For tablets: */
+    .footer {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .footer {
+      width: 100%;
+    }
+  }
