@@ -87,6 +87,12 @@ width: 90%;}
   font-size: 50px;
 }
 
+.abt{
+  font-weight: bold;
+  font-family: cursive; 
+  color:grey; 
+  font-size: 40px;
+}
 
 /* The dots/bullets/indicators */
 .dot {
