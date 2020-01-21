@@ -23,7 +23,7 @@
   /* Float the link section to the left */
   .header-left {
     float: left;
-    width: 30%;
+    width: 50%;
   }
   
   /* Float the link section to the right */
