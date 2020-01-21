@@ -23,7 +23,7 @@
   /* Float the link section to the left */
   .header-left {
     float: left;
-    width: 50%;
+    width: 30%;
   }
   
   /* Float the link section to the right */
@@ -85,13 +85,13 @@
 
   @media only screen and (max-width:800px) {
     /* For tablets: */
-    .header{
+    .header, .header-right, .header-left{
       width: 100%;
     }
   }
   @media only screen and (max-width:500px) {
     /* For mobile phones: */
-    .header {
+    .header, .header-right, .header-left {
       width: 100%;
     }
   }
