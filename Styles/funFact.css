@@ -86,15 +86,18 @@
   
   .item1:hover .overlay {
     transform: scale(1);
+    cursor: pointer;
   }
   
   .item2:hover .overlay {
     transform: scale(1);
+    cursor: pointer;
   }
   
   
   .item3:hover .overlay {
     transform: scale(1);
+    cursor: pointer;
   }
   
   .text{

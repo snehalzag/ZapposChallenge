@@ -33,9 +33,13 @@
     height: 300px;
   }
   
+  .grid-item:hover{
+      opacity: 0.8;
+  }
+
   .item1 {
     grid-column: 1 / span 2;
-    grid-row: 1;
+    grid-row: 2;
     height: 300px;
   }
   
