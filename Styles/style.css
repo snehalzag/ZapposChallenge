@@ -1,10 +1,18 @@
 .outerContainer{
+  margin: 0px;
+  border: 1px solid;
+  display: block;
   background: linear-gradient(0.25turn, rgb(255, 255, 255), rgba(221, 239, 248, 0.5),  rgba(128, 190, 221, 0.5),  rgba(92, 156, 190, 0.5));
 } 
 
 .header {
-  overflow: hidden; 
-  display: inline;
+  /* overflow: hidden; 
+  display: inline; */
+  width: 100%;
+  height: 90px;
+  background-color: rgb(255, 255, 255) ;
+  position: fixed;
+  z-index: 1;
 }
 
 /* Style the header links */
@@ -15,28 +23,30 @@
   padding: 12px;
   text-decoration: none;
   line-height: 25px;
-  margin-left: 10px;
+  margin-left: 50px;
 }
 
 /* Float the link section to the left */
 .header-left {
   float: left;
-  width: 70%;
+  width: 50%;
+  margin-top: 0px;
 }
 
 /* Float the link section to the right */
 .header-right {
   float: right;
-  margin-top: 30px;
+  margin-top: 25px;
   font-size: 25px;
   font-family: cursive;
   font-weight: bold;
+
 }
 
 .header-right > a:hover{
   background-color: black;
-  border-radius: 10px;
   color: white;
+  border-radius: 10px;
   font-size: 35px;
   cursor: pointer;
 }
@@ -67,7 +77,7 @@
 }
 
 .L_name{
-  font-size: 30px;
+  font-size: 35px;
   font-family: cursive;
   font-weight: bold;
 }
@@ -75,7 +85,8 @@
 /* Image Slider */
 body { margin:0}
 
-.mySlides {display: none;}
+.mySlides {display: none;
+position: relative;}
 
 .imgSlide {vertical-align: middle;
   border-radius: 20px;
@@ -83,11 +94,36 @@ body { margin:0}
 height:550px;
 width: 90%;}
 
+
+.mySlides:hover .overlayImg {
+  cursor: pointer;
+  transform: scale(1);
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlayImg {
+  position: absolute;
+  vertical-align: middle;
+  margin-left: 5%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  background: linear-gradient(0.25turn, rgba(86, 132, 155, 0.5), rgba(86, 132, 155, 0.5));
+  height:550px;
+  width: 90%;
+  transform: scale(0);
+  transition: .3s ease;
+  border-radius: 20px;
+}
+
+
 /* Slideshow container */
 .slideshow-container {
+  position: relative;
   width: 100%;
-  height: 750px;
-  margin: auto;
+  height: 560px;
+  margin-top: 8%;
 }
 
 /* Next & previous buttons */
@@ -117,17 +153,17 @@ width: 90%;}
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
-.text {
-  color: black;
-  font-size: 50px;
-  padding: 8px 12px;
-  font-family: cursive;
+/* Slide text */
+.slideText{
+  width: 70%;
+  height: 70%;
+  margin-left: 15%;
+  margin-top: 15%;
+  text-align: center;
+  color: white;
   font-weight: bold;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: left;
+  font-family: cursive;  
+  font-size: 50px;
 }
 
 
@@ -143,9 +179,6 @@ width: 90%;}
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
-}
 
 /* Fading animation */
 .fade {
@@ -169,3 +202,98 @@ width: 90%;}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+
+/* ---------------------------------------------------------------------------- */
+.text1{
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 50px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+/* Grid Container */
+
+.item1 { grid-area: one; 
+  width: 400px;
+  height: 400px;
+  position: relative;
+  border-radius: 50px;
+}
+
+.item2 { grid-area: two; 
+  width: 400px;
+  height: 400px;
+  position: relative;
+  border-radius: 50px;
+}
+
+.item3 { grid-area: three; 
+  width: 400px;
+  height: 400px;
+  position: relative;
+  border-radius: 50px;
+}
+
+.grid-container {
+  display: grid;
+  width: 80%;
+  margin-left: 10%;
+  grid-template-areas:
+    'one two three';
+  grid-gap: 30px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: 30px;
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(51, 102, 117);
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition: .3s ease;
+  border-radius: 50px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+
+.item1:hover .overlay {
+  transform: scale(1);
+}
+
+.item2:hover .overlay {
+  transform: scale(1);
+}
+
+
+.item3:hover .overlay {
+  transform: scale(1);
+}
+
+.text{
+  width: 80%;
+  height: 80%;
+  margin-left: 5%;
+  margin-top: 15%;
+  color: white;
+  text-align: center;
+  font-family: cursive;  
+  font-size: 20px;
+}
+

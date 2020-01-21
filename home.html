@@ -4,11 +4,11 @@
 <head>
   <title> Majestic Llama</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="Styles/style.css">
+  <link rel="stylesheet" type="text/css" href="Styles/style.css">
 </head>
 
 <body>
-<div class="outerContainer">
+  <div class="outerContainer">
 
   <div class="header">
     <div class="header-left">
@@ -18,72 +18,77 @@
     </div>
     <div class="header-right">
       <a href="home.html">Home</a>
-      <a href="">About</a>
-      <a href="contact.html">Contact</a>
+      <a href="">About Me</a>
+      <a href="">Fun Facts</a>
+      <a href="contact.html">More</a>
+    </div>
+    <br>
+    <br>
+  </div>
+  
+    <div class="slideshow-container">
+     
+      <div class="mySlides fade">
+        <img class="imgSlide" src="Images/lama8.jpg">
+        <div class="overlayImg">
+          <div class="slideText">Do You Know Me???</div>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <img class="imgSlide" src="Images/lama6.jpg">
+        <div class="overlayImg">
+          <div class="slideText">We are known as Llama!!!</div>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <img class="imgSlide" src="Images/lama7.jpg">
+        <div class="overlayImg">
+          <div class="slideText">We can be your Cute Furry Pet</div>
+        </div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <br>
+    <br>
+    <p class="text1"> Did You Know?</p>
+
+    <div class="grid-container">
+      <div class="item1">
+        <img src="Images/lama1.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Llamas make excellent guards for herds of small animals. They are very social and will
+            ‘adopt’ a group of sheep or goats as their own herd. Then they will protect the herd by chasing off coyotes
+            and other predators.</div>
+        </div>
+      </div>
+      <div class="item2">
+        <img src="Images/lama2.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Llamas are social animals and prefer to live with other llamas or herd animals. One of the
+            ways llamas communicate is by humming.</div>
+        </div>
+      </div>
+      <div class="item3">
+        <img src="Images/lama3.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Llamas live to be about 20 years old. Though some only live for 15 years and others live to
+            be 30 years old.</div>
+        </div>
+      </div>
     </div>
   </div>
-
-
-  <div class="slideshow-container">
-
-    <div class="mySlides fade">
-      <img class="imgSlide" src="Images/lama8.jpg">
-    </div>
-
-    <div class="mySlides fade">
-      <img class="imgSlide" src="Images/lama6.jpg">
-    </div>
-
-    <div class="mySlides fade">
-      <img class="imgSlide" src="Images/lama7.jpg">
-    </div>
-
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-  </div>
-  <br>
-
-  <!-- <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-  </div> -->
-
-  <br>
-   <p> Did You Know?</p>
-  <div>
-
-  </div>
-</div>
-  <script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = slides.length }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-    }
-  </script>
+  <script src="main.js"></script>
 
 </body>
 
