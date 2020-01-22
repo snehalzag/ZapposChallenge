@@ -1,5 +1,5 @@
 .header {
-  overflow: auto;
+  overflow: hidden;
     width: 100%;
     height: 100px;
     background-color: rgb(255, 255, 255) ;
@@ -17,7 +17,7 @@
     float: left;
     color: black;
     text-align: center;
-    padding: 12px;
+    padding: 5px;
     text-decoration: none;
     line-height: 25px;
     margin-left: 50px;
@@ -36,12 +36,14 @@
     margin-right: 20px;
     font-size: 25px;
     font-family: cursive;
-    font-weight: bold;  
+    font-weight: bold; 
+    background-color: white; 
   }
   
   .header-right > a
   {
     border-radius: 10px;
+    padding: 10px;
     box-shadow: 10px 10px 10px rgb(218, 216, 216);
   }
 
