@@ -1,7 +1,10 @@
 .outerContainer{
   width: 100%;
+  max-width: 2000px;
   background: linear-gradient(0.25turn, rgb(255, 255, 255), rgba(221, 239, 248, 0.5),  rgba(128, 190, 221, 0.5),  rgba(92, 156, 190, 0.5));
   border: 1px solid white;
+  place-content: center;
+  margin: auto;
 } 
 
 /* ---------------------------------------------------------------------------------- */
@@ -128,7 +131,7 @@ width: 90%;}
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+  .prev, .next,.slideText {font-size: 11px}
 }
 
 @media only screen and (max-width:800px) {

@@ -5,6 +5,7 @@
     font-family: cursive;
     font-size: 20px;
     color: grey;
+    background-color: white;
   }
   
   .footer > a{
@@ -19,6 +20,7 @@
   .imgFoot{
     width: 120px;
     height: 120px;
+    position: relative;
     float: right;
   }
 

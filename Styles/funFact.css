@@ -18,11 +18,14 @@
   width: 100%;
 }
 
-  .content{
+  .mainContent{
     width: 100%;
     height: 100%;
+    max-width: 2000px;
+    place-content: center;
+    margin: auto;
     text-align: center;
-    background: linear-gradient(0.25turn, rgb(255, 255, 255, 0.9),rgba(230, 244, 252, 0.8), rgba(221, 239, 248, 0.1)), url(../Images/lama14.jpg);
+    background: linear-gradient(0.25turn, rgb(255, 255, 255, 0.9),rgba(230, 244, 252, 0.8), rgba(221, 239, 248, 0.1)), url(../Images/lama14.jpg), no-repeat;
 }
 
   /* Grid Container */
@@ -48,7 +51,7 @@
     border-radius: 50px;
   }
   
-  .grid-container, .grid-container2 {
+  .grid-container{
     display: grid;
     width: 80%;
     margin-left: 8%;
@@ -59,7 +62,13 @@
   }
   
   .grid-container2{
-    margin-left: 20%;
+    margin-left: 25%;
+    display: grid;
+    width: 60%;
+    grid-template-areas:
+      'one two';
+    /* grid-gap: 10px; */
+    padding: 10px;
   }
   
   .grid-container2 > div{
@@ -152,13 +161,13 @@
 
   @media only screen and (max-width:800px) {
     /* For tablets: */
-    .headContent, .content {
+    .headContent, .mainContent {
       width: 100%;
     }
   }
   @media only screen and (max-width:500px) {
     /* For mobile phones: */
-    .headContent, .content {
+    .headContent, .mainContent {
       width: 100%;
     }
   }
